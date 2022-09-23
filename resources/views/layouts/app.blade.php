@@ -40,7 +40,7 @@
                         @guest
                         
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('projectone')}}">project one</a>
+                                <a class="nav-link {{(request()->routeIs('projectone')) ? "bg-danger text-white":''}}" href="{{route('projectone')}}">project one</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('projecttwo')}}">project two</a>
